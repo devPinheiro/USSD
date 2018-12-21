@@ -3,6 +3,7 @@ import logger from 'morgan';
 import express from 'express';
 
 const app = express();
+const PORT = process.env.PORT || 3100;
 
 app.use(logger('dev'));
 app.use(bodyParser.json())
@@ -49,7 +50,7 @@ app.post('*',(req,res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log(`server running on port 3000`);
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`);
 })
 
