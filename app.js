@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 
 app.post('*',(req,res) => {
 
+    let {sessionId, servveCode, phoneNumber, text} = req.body;
     
     // first level response
     if( text === ""){
