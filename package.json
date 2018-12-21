@@ -1,0 +1,30 @@
+{
+  "name": "nodejs_ussd_server",
+  "version": "1.0.0",
+  "description": "A simple ussd server",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets env app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "ussd"
+  ],
+  "author": "samuel pinheiro",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-istanbul": "^5.1.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  }
+}

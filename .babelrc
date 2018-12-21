@@ -1,0 +1,21 @@
+{
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current",
+            "chrome": "66",
+            "firefox": "60"
+          }
+        }
+      ]
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
+  }
