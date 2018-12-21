@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 app.post('*',(req,res) => {
 
     let {sessionId, servveCode, phoneNumber, text} = req.body;
-    
+
     // first level response
     if( text === ""){
         let response = `
@@ -40,7 +40,7 @@ app.post('*',(req,res) => {
         res.send(response);
     } else if(text === '1*1'){
         let balance = 10000;
-        let response = `END Your accout balance is N${MAth.floor(balance)}`
+        let response = `END Your accout balance is NGN ${Math.floor(balance)}`
         res.send(response);
     } else if(text === '1*2'){
         let account = 1289228390;
